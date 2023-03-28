@@ -8,7 +8,7 @@
 
 
 
-
+/* Esquerda da pagina */
 
 .left-page {
 
@@ -66,20 +66,21 @@ p{
 }
 
 
-
+/* Esquerda da pagina */
 
 
 h2{
     
     position: absolute;
-    bottom: 65%;
-    right: 20%;
-    left: 65%;
+    bottom: 60%;
+    left: 62%;
+    top: 20%;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
-    border: #43e61a solid 2px;
-    width: 15%;
+    width: 25%;
+    height: 10%;
+    padding: 5px;
 }
 
 .form-right{
@@ -88,25 +89,13 @@ h2{
     bottom: 15%;
     left: 62%;
     width: 25vw;
-    height: 35vh;
+    height: 55vh;
+    text-align: center;
     
-     
     
 }
 
-#lab-id{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 25vw;
-    
-    
-
-
-}
-
+/* Input */
 
 .input-form{
     margin: 20px;
@@ -118,7 +107,7 @@ h2{
     width: 330px;
     height: 48px;
     cursor: pointer;
-
+   
     
 }
 
@@ -130,8 +119,77 @@ h2{
 ::placeholder{
     color: #030303;
     opacity: 0.7;
+    padding: 10px;
+    
 }
 
-::placeholder:hover{
+/* Fim Input */
+
+
+
+/* Redes sociais */
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+    padding: 5px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    cursor: pointer;
+}
+
+.redes-sociais:first-child {
+    margin-left: 0;
+}
+
+.redes-sociais:hover {
+    background-color: #d2d2e0;
+    border: none;
+    opacity: 0.8;
+
+    
+}
+
+.img-links {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Fim das redes sociais */
+
+/* Inicio button cadastrar */
+.button-register {
+
+    border-radius: 25px;
+    width: 60%;
+    height: 45px;
+    padding: auto;
+    text-align: center;
+    line-height: 2px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 0.5px solid black;
+    
+}
+
+.button-register:hover{
+    background-color: #030328;
     color: #ffffff;
 }
+
+/* Fim do button de cadastrar */
