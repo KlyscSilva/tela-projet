@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+
+
+
+
+
+.left-page {
+
+    background-color: #02021c;
+    display: block;
+    flex-direction: column;
+    padding: 20px;
+    width: 45%;
+    height: 100vh;
+    
+    
+}
+
+h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+
+p{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+.button-left{
+
+    
+    border-radius: 25px;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: 48px;
+    display: block;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.button-left:hover {
+    background-color: #43e61a;
+    color: #ffffff;
+}
+
+
+
+
+
+h2{
+    
+    position: absolute;
+    bottom: 65%;
+    right: 20%;
+    left: 65%;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    border: #43e61a solid 2px;
+    width: 15%;
+}
+
+.form-right{
+
+    position: absolute;
+    bottom: 15%;
+    left: 62%;
+    width: 25vw;
+    height: 35vh;
+    
+     
+    
+}
+
+#lab-id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 25vw;
+    
+    
+
+
+}
+
+
+.input-form{
+    margin: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 26px;
+    caret-color: #1100ff;
+    background-color:#eef5f3;
+    width: 330px;
+    height: 48px;
+    cursor: pointer;
+
+    
+}
+
+.input-form:hover{
+    background-color: #747574;
+    opacity: 0.5;
+}
+
+::placeholder{
+    color: #030303;
+    opacity: 0.7;
+}
+
+::placeholder:hover{
+    color: #ffffff;
+}
