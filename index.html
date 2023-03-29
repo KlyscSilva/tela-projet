@@ -7,16 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Next Acess</title>
 </head>
 <body>
+<div id="#container">
 
 <div class="left-page">
 
     <h1>Next Access</h1>
     <p>Come be part of the next access</p>
-    <button class="button-left">Sign in</button>
+   <a href="index2.html" onclick="irNextPage()"><button class="button-left">Sign in</button></a> 
 
 </div>
 
@@ -27,7 +29,7 @@
     
     
    
-    <form class="form-right">
+    <form class="form-right" method="post" action="">
 
         <div class="links">
             <button class="redes-sociais">
@@ -43,27 +45,25 @@
         
 
             <div>
-                
 
+               
                 <input class ="input-form" type="text" placeholder="Name" autofocus>
                 <input class ="input-form" type="text" placeholder="Last Name">
                 <input class ="input-form" type="email" placeholder="E-mail">
                 <input class ="input-form" type="password" placeholder="Password">
 
-        
-           
-
+                <button class="button-register" type="submit">Register</button>
             </div>
             
-    
-            <button class="button-register" type="submit">Register</button>
 
     </form>
-
+    
 
 
 
 </section>
+
+</div>
     
 </body>
 </html>

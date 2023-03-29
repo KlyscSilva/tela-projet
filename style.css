@@ -22,6 +22,10 @@
     
 }
 
+a{
+    text-decoration: none;
+}
+
 h1{
     color: #ffffff;
     font-weight: 700;
@@ -72,9 +76,9 @@ p{
 h2{
     
     position: absolute;
-    bottom: 60%;
+    bottom: 20%;
     left: 62%;
-    top: 20%;
+    top: 14%;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
@@ -91,8 +95,6 @@ h2{
     width: 25vw;
     height: 55vh;
     text-align: center;
-    
-    
 }
 
 /* Input */
@@ -194,3 +196,19 @@ h2{
 }
 
 /* Fim do button de cadastrar */
+
+/* Defina as propriedades de animação */
+.animate{
+    animation-duration: 1s;
+    animation-name: fadeIn;
+}
+
+/* Defina a animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
