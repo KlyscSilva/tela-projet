@@ -109,6 +109,7 @@ h2{
     width: 330px;
     height: 48px;
     cursor: pointer;
+    outline:none;
 
    
     
@@ -117,6 +118,7 @@ h2{
 .input-form:hover{
     background-color: #747574;
     opacity: 0.5;
+    outline:none;
 }
 
 ::placeholder{
