@@ -109,7 +109,11 @@ h2{
     width: 330px;
     height: 48px;
     cursor: pointer;
+<<<<<<< HEAD:style.css
     outline:none;
+=======
+    outline: none;
+>>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>):Create-account/style.css
 
    
     
@@ -188,7 +192,8 @@ h2{
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 10px;
-    border: 0.5px solid black;
+    border: 0.2px solid black;
+    outline: none;
     
 }
 
@@ -199,12 +204,8 @@ h2{
 
 /* Fim do button de cadastrar */
 
-/* Defina as propriedades de animação */
-.animate{
-    animation-duration: 1s;
-    animation-name: fadeIn;
-}
 
+<<<<<<< HEAD:style.css
 /* Defina a animação */
 @keyframes fadeIn {
     from {
@@ -223,3 +224,20 @@ h2{
    transition: transform 1s ease-in-out;
 }
 
+=======
+
+/* Animação para ir para a esquerda */
+
+  
+  /* Animação para ir para a direita */
+  .transition-right {
+    animation: slide-right 2s ease-in-out forwards;
+  }
+  
+  @keyframes slide-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  
+>>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>):Create-account/style.css

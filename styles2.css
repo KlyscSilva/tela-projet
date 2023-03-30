@@ -183,6 +183,7 @@ input {
     }
 }
 
+<<<<<<< HEAD
 .page-1 {
    transition: transform 1s ease-in-out;
 }
@@ -190,3 +191,24 @@ input {
 .page-2 {
    transition: transform 1s ease-in-out;
 }
+=======
+
+  
+ 
+/* Animação para ir para a esquerda */
+
+
+  /* Animação para ir para a esquerda */
+.transition-left {
+    animation: slide-left 1s ease-in-out forwards;
+  }
+  
+  @keyframes slide-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  
+ 
+  
+>>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>)
