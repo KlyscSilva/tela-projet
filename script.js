@@ -41,13 +41,13 @@ function registerPage() {
 
 
 
-// Criando eventos com função de submit
+// Criando eventos com função de submit e criando as variaveis para serem inseridas na função para o processo de validação
 form.addEventListener("submit",function(event){
 
 const nomeInput = form.elements["name"]
 const sobreNomeInput = form.elements["last-name"]
 const emailInput = form.elements["email"]
-const senhaInput = form.elements["passowrd"]
+const senhaInput = form.elements["password"]
 
 
 
