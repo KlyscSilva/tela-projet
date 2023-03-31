@@ -109,20 +109,18 @@ h2{
     width: 330px;
     height: 48px;
     cursor: pointer;
-<<<<<<< HEAD:style.css
-    outline:none;
-=======
     outline: none;
->>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>):Create-account/style.css
+
 
    
     
 }
 
 .input-form:hover{
-    background-color: #747574;
-    opacity: 0.5;
+    background-color: #c4e217;
+    opacity: 0.7;
     outline:none;
+    font-size: 15px;
 }
 
 ::placeholder{
@@ -205,27 +203,6 @@ h2{
 /* Fim do button de cadastrar */
 
 
-<<<<<<< HEAD:style.css
-/* Defina a animação */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.page-1 {
-   transition: transform 1s ease-in-out;
-}
-
-.page-2 {
-   transition: transform 1s ease-in-out;
-}
-
-=======
-
 /* Animação para ir para a esquerda */
 
   
@@ -240,4 +217,4 @@ h2{
   }
   
   
->>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>):Create-account/style.css
+
