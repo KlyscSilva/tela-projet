@@ -1,15 +1,8 @@
 const button = document.querySelector("button-register")
 const form = document.getElementsByClassName("input-form")
 
-//function irNextPage() {
-  //window.location = "index2.html";
-//}
 
-//function registerPage() {
-  //window.location = "index.html";
-//}
-
-
+//Script de pular pagina
 function irNextPage() {
 
   document.querySelector('.button-left').addEventListener('click', function() {
@@ -36,7 +29,7 @@ function registerPage() {
     window.location.href = '../Create-account/index.html';
   },1000); // 1000ms = 1 segundo
 }
-
+// Fim do Script Pular Pagina
 
 
 
@@ -88,3 +81,4 @@ function checkValidity(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
+// FIM DA VALIDACAO
