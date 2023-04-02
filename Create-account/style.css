@@ -1,67 +1,56 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
 
-
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
 /* Esquerda da pagina */
-
 .left-page {
-
     background-color: #02021c;
-    display: block;
-    flex-direction: column;
-    padding: 20px;
     width: 45%;
-    height: 100vh;
-    
-    
+    display: flex;
+    align-items: center;
+    text-align: -webkit-center;
 }
 
-a{
+.left {
+    width: 100%;
+}
+
+a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     color: #ffffff;
     font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    position: relative;
-    top: 35%;
+    font-size: 50px;
 }
 
-
-p{
+p {
     color: #ffffff;
     font-size: 25px;
-    text-align: center;
-    position: relative;
-    top: 35%;
-    font-weight: 400;
-    margin-top: 20px;
+    font-weight: 200;
+    margin: 15px 0;
 }
 
-
-.button-left{
-
-    
-    border-radius: 25px;
-    top: 40%;
-    left: 25%;
-    width: 50%;
-    height: 48px;
-    display: block;
-    position: relative;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.button-left {
+    width: 30%;
+    height: 45px;
     border: none;
+    border-radius: 30px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
 }
 
 .button-left:hover {
@@ -69,82 +58,30 @@ p{
     color: #ffffff;
 }
 
-
 /* Esquerda da pagina */
 
+.right-page {
+    width: 55%;
+    text-align: -webkit-center;
 
-h2{
-    
-    position: absolute;
-    bottom: 20%;
-    left: 62%;
-    top: 14%;
+}
+
+h2 {
+    font-size: 50px;
     font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    width: 25%;
-    height: 10%;
-    padding: 5px;
+    line-height: 40px;
+    margin-top: 8%;
+    color: #02021c;
 }
 
-.form-right{
-
-    position: absolute;
-    bottom: 15%;
-    left: 62%;
-    width: 25vw;
-    height: 55vh;
-    text-align: center;
+.form-right {
+    margin-top: 30px;
 }
-
-/* Input */
-
-.input-form{
-    margin: 20px;
-    padding: 5px;
-    border: none;
-    border-radius: 26px;
-    caret-color: #1100ff;
-    background-color:#eef5f3;
-    width: 330px;
-    height: 48px;
-    cursor: pointer;
-<<<<<<< HEAD:style.css
-    outline:none;
-=======
-    outline: none;
->>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>):Create-account/style.css
-
-   
-    
-}
-
-.input-form:hover{
-    background-color: #747574;
-    opacity: 0.5;
-    outline:none;
-}
-
-::placeholder{
-    color: #030303;
-    opacity: 0.7;
-    padding: 10px;
-    
-}
-
-/* Fim Input */
-
-
 
 /* Redes sociais */
 .links {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    height: 10vh;
-    padding: 5px;
-    align-items: center;
-    margin-right: 25px;
 }
 
 .redes-sociais {
@@ -168,8 +105,6 @@ h2{
     background-color: #d2d2e0;
     border: none;
     opacity: 0.8;
-
-    
 }
 
 .img-links {
@@ -177,67 +112,92 @@ h2{
     height: 30px;
 }
 
-
 /* Fim das redes sociais */
+
+/* Input */
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form {
+    margin: 20px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 26px;
+    caret-color: #1100ff;
+    background-color: #eef5f3;
+    width: 330px;
+    height: 48px;
+    outline: none;
+}
+
+.input-form:hover {
+    background-color: rgb(116, 117, 116, .3);
+}
+
+::placeholder {
+    color: #030303;
+    opacity: 0.7;
+    padding: 10px;
+
+}
+
+/* Fim Input */
 
 /* Inicio button cadastrar */
 .button-register {
-
-    border-radius: 25px;
-    width: 60%;
+    width: 30%;
     height: 45px;
-    padding: auto;
-    text-align: center;
-    line-height: 2px;
-    letter-spacing: 1px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
     cursor: pointer;
-    margin-top: 10px;
-    border: 0.2px solid black;
-    outline: none;
-    
+    background: #02021c;
 }
 
-.button-register:hover{
-    background-color: #030328;
-    color: #ffffff;
+.button-register:hover {
+    opacity: .8;
 }
 
 /* Fim do button de cadastrar */
 
-
-<<<<<<< HEAD:style.css
 /* Defina a animação */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 .page-1 {
-   transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .page-2 {
-   transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
-
-=======
 
 /* Animação para ir para a esquerda */
 
-  
-  /* Animação para ir para a direita */
-  .transition-right {
+
+/* Animação para ir para a direita */
+.transition-right {
     animation: slide-right 2s ease-in-out forwards;
-  }
-  
-  @keyframes slide-right {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  
->>>>>>> 05e55c6 (Co-authored-by: Mikaa Pereira  <mikasampaio@users.noreply.github.com>):Create-account/style.css
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,58 +12,46 @@
     <link rel="stylesheet" href="./style.css">
     <title>Next Acess</title>
 </head>
+
 <body>
-
-
-<div class="left-page">
-
-    <h1>Next Access</h1>
-    <p>Come be part of the next access</p>
-   <a href="../index2.html" onclick="irNextPage()"><button class="button-left">Sign in</button></a> 
-
-</div>
-
-
-<section class="right-page">
-
-    <h2>Create Account</h2>
-    
-    
-   
-    <form class="form-right" method="post" action="">
-        
-        <div class="links">
-            <button class="redes-sociais">
-                <img class="img-links" src="../img/icons8-f-do-facebook-24.png" alt="facebook" class="links">
-            <button class="redes-sociais">
-                <img class="img-links" src="../img/icons8-google-plus-32.png" alt="google plus" class="links">
-            </button>
-            <button class="redes-sociais">
-                <img class="img-links" src="../img/icons8-linkedin-2-32.png" alt="linkedin" class="links">
-            </button>
+    <section class="left-page">
+        <div class="left">
+            <h1>Next Access</h1>
+            <p>Come be part of the next access</p>
+            <a href="../index2.html" onclick="irNextPage()">
+                <button class="button-left">Sign in</button>
+            </a>
         </div>
-        
+    </section>
 
-            <div>
+    <section class="right-page">
+        <h2>Create Account</h2>
 
-               
-                <input class ="input-form" type="text" placeholder="Name" autofocus required name="name">
-                <input class ="input-form" type="text" placeholder="Last Name" required name="last-name">
-                <input class ="input-form" type="email" placeholder="E-mail" required name="email">
-                <input class ="input-form" type="password" placeholder="Password" required name="password">
+        <form class="form-right" method="post" action="">
+
+            <div class="links">
+                <button class="redes-sociais">
+                    <img class="img-links" src="../img/icons8-f-do-facebook-24.png" alt="facebook" class="links">
+                </button>
+                <button class="redes-sociais">
+                    <img class="img-links" src="../img/icons8-google-plus-32.png" alt="google plus" class="links">
+                </button>
+                <button class="redes-sociais">
+                    <img class="img-links" src="../img/icons8-linkedin-2-32.png" alt="linkedin" class="links">
+                </button>
+            </div>
+
+            <div class="forms">
+                <input class="input-form" type="text" placeholder="Name" autofocus required name="name">
+                <input class="input-form" type="text" placeholder="Last Name" required name="last-name">
+                <input class="input-form" type="email" placeholder="E-mail" required name="email">
+                <input class="input-form" type="password" placeholder="Password" required name="password">
 
                 <button class="button-register" type="submit" value="cadastrar">Register</button>
             </div>
-            
+        </form>
+    </section>
 
-    </form>
-    
-
-
-
-</section>
-
-
-    
 </body>
+
 </html>
