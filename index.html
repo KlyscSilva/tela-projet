@@ -37,18 +37,18 @@
         <div class="paragraph-line"><p>OR</p></div>
 
         <!-- Formulário -->
-        <form action="" method="post">
+        <form action="" method="post" class="form-login">
             <label for="" class="input">
                 <img src="./assets/icons8-mensagem-preenchida-24.png" alt="">
-                <input required type="email" placeholder="Email ">
+                <input required type="email" placeholder="Email" name="emailLogin">
             </label>
 
             <br>
 
             <label for="" class="input">
-                <img src="./assets/icons8-trancar-24.png" alt="cadeado">
-                <input required type="password" placeholder="Password">
-                <img src="./assets/icons8-visível-24.png" alt="olho visível">
+                <img src="./assets/closed.png" alt="cadeado" >
+                <input required type="password" placeholder="Password" name="passwordLogin" id="password">
+                <img src="./assets/open.png" alt="olhovisível" id="eyeSvg" onclick="eyeClick()">
             </label>
 
             <br>
