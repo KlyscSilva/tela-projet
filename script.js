@@ -25,14 +25,14 @@ showPassword()
 function showPassword(){
 
   passwordInput.setAttribute("type", "text")
-  eyeSvg.setAttribute("src","assets/closed.png")
+  eyeSvg.setAttribute("src","assets/open.png")
 
 }
 
 function hidePassword(){
 
   passwordInput.setAttribute("type","password")
-  eyeSvg.setAttribute("src","assets/open.png")
+  eyeSvg.setAttribute("src","assets/icons8-olho-fechado-24.png")
 }
 
 }
