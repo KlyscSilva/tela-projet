@@ -168,7 +168,7 @@ input {
 /* Fim da seção de increver-se */
 
 /* Defina as propriedades de animação */
-.animate{
+.animate {
     animation-duration: 1s;
     animation-name: fadeIn;
 }
@@ -178,6 +178,7 @@ input {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -185,30 +186,82 @@ input {
 
 
 .page-1 {
-   transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .page-2 {
-   transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 
-  
- 
+
+
 /* Animação para ir para a esquerda */
 
 
-  /* Animação para ir para a esquerda */
+/* Animação para ir para a esquerda */
 .transition-left {
     animation: slide-left 1s ease-in-out forwards;
-  }
-  
-  @keyframes slide-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  
- 
-  
+}
 
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .container-principal {
+        width: 100%;
+        height: 60%;
+    }
+
+    .sign-up {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:700px) {
+
+    .container-principal,
+    .sign-up {
+        padding: 20px;
+    }
+
+    .signup-text p {
+        font-size: 20px;
+    }
+
+    .sign {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-top: 8%;
+    }
+
+    .input {
+        width: 85%;
+    }
+
+    #btn-signUp {
+        margin-bottom: 8%;
+    }
+
+}
