@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000000;
+    width: 100vw;
 }
 
 .container {
@@ -15,35 +15,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     background-color: #000000;
 }
 
-.container-diany{
-    margin: 0 30px;
-}
-
-.container-joao{
-    margin: 0 30px;
-}
-
-.container-matheus{
-    margin: 0 30px;
-}
-
-.container-mikaeli{
-    margin: 0 30px;
-}
 
 .card {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    width: 360px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
     overflow: hidden;
     background-image: linear-gradient(#333, #333);
     transition: all .5s;
@@ -53,67 +37,33 @@ body {
     background-image: linear-gradient(#443f3f, #272424);
 }
 
-.img1 {
+.img1,
+.img2,
+.img3,
+.img4 {
     width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 400px;
     background-image: url('./images/profile.jpeg');
     background-size: cover;
     background-position: center;
     transition: all .5s;
     z-index: 2;
-    position: relative;
     opacity: .8;
 }
 
 .img2 {
-    width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
     background-image: url('./images/profile.jpeg');
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
-    z-index: 2;
-    position: relative;
-    opacity: .8;
 }
 
 .img3 {
-    width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
     background-image: url('./images/profile-matheus.jpeg');
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
-    z-index: 2;
-    position: relative;
-    opacity: .8;
 }
 
 .img4 {
-    width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
     background-image: url('./images/profile-mikaeli.jpeg');
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
-    z-index: 2;
-    position: relative;
-    opacity: .8;
 }
 
-.linkedin{
+.linkedin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +77,7 @@ body {
     opacity: 1;
 }
 
-.card:hover  span {
+.card:hover span {
     font-size: 28px;
 }
 
@@ -136,9 +86,6 @@ body {
     height: 0;
     opacity: 0;
     transition: all .5s;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
     transform: translateY(30px);
 }
 
@@ -157,7 +104,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-p{
+p {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
@@ -181,101 +128,66 @@ p{
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-.container {
- display: block;
-}
+    .container {
+        display: block;
+    }
 
-.container-diany{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto;
-}
+    .container-diany,
+    .container-joao,
+    .container-matheus,
+    .container-mikaeli {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 60px auto;
+    }
 
-.container-joao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto;
-}
-
-.container-matheus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto;
-}
-
-.container-mikaeli{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto;
-}
-
-
-.card{
-    width: 360px;
-}
+    .card {
+        width: 360px;
+    }
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
 
-.card{
+    .card {
         width: 300px;
     }
 
-.linkedin{
-        margin: 20px auto;}
-}
+    .linkedin {
+        margin: 20px auto;
+    }
 
-p{
+    p {
     font-size: 20px;
 }
+}
 
+@media (max-width: 361px) {
 
-
-@media (max-width: 361px){
-
-.card{
+    .card {
         width: 220px;
-}
+    }
 
-.img1{
-    width: 100%;
-    height: 200px;
-}
-
-.img2{
-    width: 100%;
-    height: 200px;
-}
-
-.img3{
-    width: 100%;
-    height: 200px;
-}
-
-.img4{
-    width: 100%;
-    height: 200px;
-}
-
-.linkedin{
-    margin: 25px auto;
-    width: 100px;
-    border-radius: 8px;
-}
+    .img1, .img2, .img3, .img4 {
+        width: 100%;
+        height: 200px;
+    }
 
 
-h2 {
-    font-size: 20px;
-}
+    .linkedin {
+        margin: 25px auto;
+        width: 100px;
+        border-radius: 8px;
+    }
 
-p{
-    font-size: 16px;
-}
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
