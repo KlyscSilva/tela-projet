@@ -204,7 +204,7 @@ input {
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
     body {
         width: 100vw;
         height: 100vh;
@@ -226,8 +226,41 @@ input {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:700px){
-    .left-page, .right-page {
+@media screen and (min-width:320px) and (max-width:700px) {
+    #btnTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        background: #d2d2e0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        cursor: pointer;
+        display: none;
+
+    }
+
+    .arrow {
+        border: solid #000000;
+        border-width: 0 3px 3px 0;
+        padding: 5px;
+        display: inline-block;
+    }
+
+    .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+
+    .left-page,
+    .right-page {
         padding: 20px;
     }
 
@@ -235,7 +268,8 @@ input {
         font-size: 20px;
     }
 
-    .button-left, .button-register {
+    .button-left,
+    .button-register {
         width: 50%;
     }
 
@@ -250,4 +284,18 @@ input {
     .button-register {
         margin-bottom: 40px;
     }
+}
+
+@media screen and (max-width:320px) {
+
+    .left-page,
+    .right-page {
+        padding: 5px;
+        height: 50%;
+    }
+
+    .left h1 {
+        font-size: 45px;
+    }
+
 }

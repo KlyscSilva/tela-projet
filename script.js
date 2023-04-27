@@ -6,6 +6,30 @@ const form2 = document.getElementsByClassName("form-login");
 const passwordInput = document.getElementById("password")
 const eyeSvg = document.getElementById("eyeSvg")
 
+//Botão up
+const btn = document.getElementById('btnTop')
+
+btn.addEventListener('click', () => {
+  window.scrollTo(0,0)
+  document.removeEventListener('scroll', ocult)
+})
+
+const ocult = () => {
+  if (window.scrollY > 10) {
+    btn.style.display = "flex"
+  } else {
+    btn.style.display = "none"
+  }
+}
+
+document.addEventListener("scroll", () =>{
+  ocult()
+  document.removeEventListener('scroll', ocult)
+
+})
+
+ocult()
+
 
 
 function eyeClick(){
